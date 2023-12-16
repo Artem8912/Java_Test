@@ -64,10 +64,10 @@ public class Notebook {
     
 }
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj){
-            return true;
-        }
+    public  boolean equals(Object obj) {
+        // if (this == obj){
+        //     return true;
+        // }
         if (obj instanceof Notebook){
             Notebook Notebook = (Notebook) obj;
             return model.equals(Notebook.model) && HD_Volume.equals(Notebook.HD_Volume) && RAM_Volume.equals(Notebook.RAM_Volume) && Frequency_process.equals(Notebook.Frequency_process)&& Colour.equals(Notebook.Colour)&& Price.equals(Notebook.Price);
