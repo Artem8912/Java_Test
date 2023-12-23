@@ -177,7 +177,7 @@ public static Set<Notebook> findByFrequency_of_Processor(Set<Notebook> Notebooks
     }
    public static Set<Notebook> findByColour(Set<Notebook> Notebooks){
         Set<Notebook> res = new HashSet<>();
-        System.out.println("Введите желаемый цвет: ");
+        System.out.println("Введите желаемый цвет:  ");
         Scanner sc1 = new Scanner(System.in);
         String colour = sc1.nextLine();
         
