@@ -259,15 +259,15 @@ public static Set<Notebook> findByFrequency_of_Processor(Set<Notebook> Notebooks
     public static void Filter_Menu(){
         boolean k = true;
 
-        ArrayList<String>list1 = new ArrayList<>();
+        Set<Notebook>list1 = new HashSet();
         
-        ArrayList<String>list2 = new ArrayList<>();
-        ArrayList<String>list3 = new ArrayList<>();
-        ArrayList<String>list4 = new ArrayList<>();
-        ArrayList<String>list5 = new ArrayList<>();
-        ArrayList<String>list6 = new ArrayList<>();
-        ArrayList<String>list = new ArrayList<>();
-        list = SetToString(data());
+        Set<Notebook>list2 = new HashSet();
+        Set<Notebook>list3 = new HashSet();
+        Set<Notebook>list4 = new HashSet();
+       Set<Notebook>list5 = new HashSet();
+        Set<Notebook>list6 = new HashSet();
+        Set<Notebook>list = new HashSet();
+        list = data();
         while (k) {
             
         
@@ -286,37 +286,37 @@ public static Set<Notebook> findByFrequency_of_Processor(Set<Notebook> Notebooks
         switch (option) {
             
             case "1":
-                list1 = SetToString(findByModel(data()));
+                list1 = findByModel(data());
                 list.retainAll(list1);
                
                 break;
             case "2":
-                list2 = SetToString(findByHD_Volume(data()));
+                list2 = findByHD_Volume(data());
                 list.retainAll(list2);
                
                 break;
             case "3":
-                list3 = SetToString(findByRAM_Volume(data()));
+                list3 = findByRAM_Volume(data());
                 list.retainAll(list3);
                
                 break;
             case "4":
-                list4 = SetToString(findByFrequency_of_Processor(data()));
+                list4 = findByFrequency_of_Processor(data());
                 list.retainAll(list4);
                 
                 break;
             case "5":
-                list5 = SetToString(findByColour(data()));
+                list5 = findByColour(data());
                 list.retainAll(list5);
                 
                 break;
             case "6":
-                list6 = SetToString(findByPrice(data()));
+                list6 = findByPrice(data());
                 list.retainAll(list6);
                 
                 break;
             case "7":
-                printList(list);
+                printSet(list);
                 
                 Filter_Menu();
                 break;

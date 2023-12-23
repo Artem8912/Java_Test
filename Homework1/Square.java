@@ -4,8 +4,8 @@ public class Square extends Rectangle {
     
     
     
-    @Override
-    void CalculateArea(double s1,double s2){
+    // @Override
+    public Square(double s1,double s2){
         s2 = s1;
         System.out.print("Square:= ");
         double S = Math.pow(s1,2);
@@ -13,6 +13,13 @@ public class Square extends Rectangle {
         System.out.println(S);
        
     }
+    public Square(double s){
+        this(s,s);
+    }
+    public Square(){
+        this(4);
+    }
+    
      @Override
     void CalculatePerimeter(double s1,double s2){
         s2 = s1;

@@ -13,7 +13,7 @@ public class Program {
        
         Rectangle square = new Square();
         System.out.println("Square:");
-        square.CalculateArea(2.5, 2.5);
+        square.CalculateArea(4);
         square.CalculatePerimeter(2.5, 2.5);
     }
 }

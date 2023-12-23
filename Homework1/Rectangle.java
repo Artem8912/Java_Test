@@ -12,6 +12,12 @@ public  class  Rectangle {
         
         System.out.println(S);
     }
+    void CalculateArea(double side){
+        System.out.print("Square:= ");
+        double S = Math.pow(side,2);
+        
+        System.out.println(S);
+    }
 
    void CalculatePerimeter(double s1,double s2){
         double P = 2*(s1+s2);
