@@ -15,7 +15,7 @@ public class Circle {
      static void CalculatePerimeter(double r){
         double P = 2*Math.PI*r;
         System.out.println();
-        System.out.print("Perimeter:= ");
+        System.out.print("Perimeter := ");
         System.out.print(P);
     }
     
