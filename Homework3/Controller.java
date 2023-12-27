@@ -4,7 +4,13 @@ import java.util.ArrayList;
 // import java.util.Comparator;
 
 public class Controller extends StreamComparator<String>  {
-    
+
+
+    public static int compare1(Stream<String> fl1,Stream<String> fl2){
+        return Integer.compare(fl1.QuantityOfgroups, fl2.QuantityOfgroups);
+            }
+     
+     
     public static void main(String[] args) {
             Stream<String> f1 = new Stream<String>(1, 5);
             Stream<String> f2 = new Stream<String>(2, 15);
@@ -19,7 +25,8 @@ public class Controller extends StreamComparator<String>  {
             streams.add(f4);
             streams.add(f5);
 
-            
+           Comparing com = (fl1,fl2)->compare1(fl1,fl2);
+            System.out.println(com.compare1(f1,f2));
 
             streams.sort(new Controller());
             for (Stream<String> stream:streams){

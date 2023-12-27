@@ -1,5 +1,5 @@
 package Homework3;
-
+@FunctionalInterface
 public interface Comparing {
-    public int compare(Stream<String> f1,Stream<String> f2);
+    public  int compare1(Stream<String> f1,Stream<String> f2);
 }
