@@ -33,7 +33,7 @@ public Iterator<Type> iterator(){
 
  @Override
  public String toString(){
-    return "Номер потока: "+NumberOfFlow +" Количество групп: "+QuantityOfgroups;
+    return "Номер потока:  "+NumberOfFlow +" Количество групп: "+QuantityOfgroups;
  }
 }
 
